@@ -3,12 +3,12 @@ import { Award, Clock, Shield, ThumbsUp } from 'lucide-react';
 const stats = [
   {
     icon: Clock,
-    value: '15+',
+    value: '2+',
     label: 'Years Experience',
   },
   {
     icon: ThumbsUp,
-    value: '5,000+',
+    value: '500+',
     label: 'Happy Customers',
   },
   {
@@ -33,7 +33,7 @@ export default function About() {
               Why Choose Us
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              With over 15 years of experience in the HVAC industry, we've built our reputation 
+              With years of experience in the HVAC industry, we've built our reputation 
               on quality workmanship, honest pricing, and exceptional customer service. Our team 
               of certified technicians is committed to keeping your home comfortable year-round.
             </p>

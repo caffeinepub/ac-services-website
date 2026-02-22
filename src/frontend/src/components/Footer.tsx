@@ -1,5 +1,5 @@
 import { SiFacebook, SiX, SiInstagram, SiLinkedin } from 'react-icons/si';
-import { Phone, Mail, Clock, MapPin } from 'lucide-react';
+import { Phone, Mail, Clock, MapPin, QrCode } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -70,10 +70,10 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Social Media */}
+          {/* Social Media & QR Code */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Follow Us</h4>
-            <div className="flex gap-4">
+            <div className="flex gap-4 mb-6">
               <a
                 href="https://facebook.com"
                 target="_blank"
@@ -110,6 +110,27 @@ export default function Footer() {
               >
                 <SiLinkedin className="w-5 h-5" />
               </a>
+            </div>
+
+            {/* QR Code Section */}
+            <div className="mt-6">
+              <div className="flex items-center gap-2 mb-3">
+                <QrCode className="w-5 h-5" />
+                <h5 className="text-sm font-semibold">Scan to Visit</h5>
+              </div>
+              <div className="inline-block p-3 bg-white rounded-lg">
+                <img
+                  src="/assets/generated/qr-code.dim_400x400.png"
+                  alt="QR code to visit Friends AC Services website"
+                  className="w-32 h-32"
+                  onError={(e) => {
+                    e.currentTarget.style.display = 'none';
+                  }}
+                />
+              </div>
+              <p className="text-xs text-primary-foreground/60 mt-2">
+                Scan to visit our website
+              </p>
             </div>
           </div>
         </div>

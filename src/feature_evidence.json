@@ -2,10 +2,10 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-update-the-email-input-field-in-the-booking-component-frontend-src-components-booking-tsx-at-xpath-html-1-body-1-div-1-div-1-main-1-section-5-div-1-div-1-div-2-div-2-div-2-form-1-div-1-div-2-input-1-to-use-x-as-the-input-symbol-icon-instead-of-the-current-implementation",
-      "featureTitle": "Update the email input field in the Booking component (frontend/src/components/Booking.tsx) at XPath /html[1]/body[1]/div[1]/div[1]/main[1]/section[5]/div[1]/div[1]/div[2]/div[2]/div[2]/form[1]/div[1]/div[2]/input[1] to use 'X' as the input symbol/icon instead of the current implementation",
+      "featureId": "feature-generate-a-qr-code-image-that-encodes-the-friends-ac-services-website-url",
+      "featureTitle": "Generate a QR code image that encodes the Friends AC Services website URL",
       "files": [
-        "frontend/src/components/Booking.tsx"
+        "frontend/src/components/Footer.tsx"
       ],
       "components": [
         "core-infrastructure@1.0.2",
@@ -15,7 +15,43 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-23"
+        "REQ-30"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-display-the-generated-qr-code-in-the-footer-component-alongside-the-existing-contact-information-with-appropriate-styling-and-labeling",
+      "featureTitle": "Display the generated QR code in the Footer component alongside the existing contact information with appropriate styling and labeling",
+      "files": [
+        "frontend/src/components/Footer.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-31"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-render-the-generated-qr-code-image-as-a-static-asset-in-frontend-public-assets-generated-directory-for-use-in-the-footer-component",
+      "featureTitle": "Render the generated QR code image as a static asset in frontend/public/assets/generated directory for use in the Footer component",
+      "files": [
+        "frontend/src/components/Footer.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-32"
       ],
       "confidence": "high"
     }

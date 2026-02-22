@@ -1,12 +1,13 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 13,
+  "projectStateVersion": 21,
   "summary": "AC services website",
   "architectural_notes": [
     "Email notifications disabled - booking data stored in backend only"
   ],
   "known_issues": [],
   "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- QR code encoding the Friends AC Services website URL with high error correction and clear contrast (qr-code.dim_400x400.png)",
   "existing_features": [
     {
       "id": "feature-create-a-hero-section-showcasing-ac-services-with-a-compelling-headline-brief-description-of-services-offered-and-a-prominent-call-to-action-button-for-requesting-service",
@@ -159,6 +160,78 @@
         "REQ-23"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-add-the-provided-company-logo-image-air-conditioner-repair-and-service-logo-with-circular-design-to-the-hero-component-near-the-friends-ac-services-title-text-with-appropriate-sizing-and-positioning",
+      "title": "Add the provided company logo image (air conditioner repair and service logo with circular design) to the Hero component near the 'Friends AC Services' title text with appropriate sizing and positioning",
+      "reqIds": [
+        "REQ-24"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-frontend-index-html-to-include-the-company-logo-as-the-website-favicon-replacing-the-default-vite-icon",
+      "title": "Update frontend/index.html to include the company logo as the website favicon, replacing the default Vite icon",
+      "reqIds": [
+        "REQ-25"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-render-the-generated-logo-images-as-static-assets-in-frontend-public-assets-generated-directory-for-use-in-the-hero-component-and-as-favicon",
+      "title": "Render the generated logo images as static assets in frontend/public/assets/generated directory for use in the Hero component and as favicon",
+      "reqIds": [
+        "REQ-26"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-the-logo-image-element-from-the-hero-component-at-xpath-html-1-body-1-div-1-div-1-section-1-div-2-div-1-div-1-img-1",
+      "title": "Remove the logo image element from the Hero component at XPath /html[1]/body[1]/div[1]/div[1]/section[1]/div[2]/div[1]/div[1]/img[1]",
+      "reqIds": [
+        "REQ-27"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-about-component-frontend-src-components-about-tsx-to-display-2-instead-of-15-for-the-years-of-experience-statistic",
+      "title": "Update the About component (frontend/src/components/About.tsx) to display '2+' instead of '15+' for the years of experience statistic",
+      "reqIds": [
+        "REQ-28"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-about-component-frontend-src-components-about-tsx-to-display-500-instead-of-5000-for-the-customers-served-statistic",
+      "title": "Update the About component (frontend/src/components/About.tsx) to display '500+' instead of '5000+' for the customers served statistic",
+      "reqIds": [
+        "REQ-29"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-generate-a-qr-code-image-that-encodes-the-friends-ac-services-website-url",
+      "title": "Generate a QR code image that encodes the Friends AC Services website URL",
+      "reqIds": [
+        "REQ-30"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-display-the-generated-qr-code-in-the-footer-component-alongside-the-existing-contact-information-with-appropriate-styling-and-labeling",
+      "title": "Display the generated QR code in the Footer component alongside the existing contact information with appropriate styling and labeling",
+      "reqIds": [
+        "REQ-31"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-render-the-generated-qr-code-image-as-a-static-asset-in-frontend-public-assets-generated-directory-for-use-in-the-footer-component",
+      "title": "Render the generated QR code image as a static asset in frontend/public/assets/generated directory for use in the Footer component",
+      "reqIds": [
+        "REQ-32"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
@@ -227,6 +300,18 @@
     {
       "id": "AR-11",
       "summary": "Edit the input in X symbol",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-12",
+      "summary": "Update About section statistics: change experience to '2+' years and customers to '500+'",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-13",
+      "summary": "Generate a QR code for the website",
       "reqIds": [],
       "status": "pending"
     }

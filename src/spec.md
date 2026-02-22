@@ -1,10 +1,10 @@
 # Specification
 
 ## Summary
-**Goal:** Update the booking form email input field to display an 'X' symbol/icon.
+**Goal:** Add a QR code to the website footer that links to the Friends AC Services website URL.
 
 **Planned changes:**
-- Modify the email input field in the Booking component to use 'X' as the input symbol/icon
-- Ensure form functionality and validation remain intact
+- Generate a QR code image asset encoding the website URL
+- Display the QR code in the Footer component with appropriate labeling and styling
 
-**User-visible outcome:** The email input field in the booking form will display an 'X' symbol instead of the current icon, while maintaining all existing functionality.
+**User-visible outcome:** Users can scan a QR code in the footer to quickly access the Friends AC Services website on their mobile devices.

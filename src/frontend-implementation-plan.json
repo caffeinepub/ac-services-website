@@ -1,21 +1,53 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Change booking form email input to use X symbol",
+  "title": "Generate QR code for website",
   "requirements": [
     {
-      "id": "REQ-23",
-      "summary": "Update the email input field in the Booking component to display 'X' as its associated symbol or icon",
+      "id": "REQ-30",
+      "summary": "Generate a QR code image that encodes the Friends AC Services website URL",
       "acceptanceCriteria": [
-        "The email input field in the Booking form displays 'X' as its associated symbol or icon",
-        "The input field functionality remains unchanged and still accepts email addresses",
-        "The form validation continues to work correctly for the email field"
+        "A QR code image is generated that links to the website URL",
+        "The QR code is scannable and properly encodes the website address",
+        "The image has appropriate dimensions for clear scanning (minimum 300x300px recommended)"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/components/Booking.tsx",
+          "path": "frontend/src/components/Footer.tsx",
           "operation": "modify",
-          "description": "Update the email input field to use 'X' as the input symbol/icon. Locate the email input at the specified XPath position (second input in the first column of form fields) and modify its icon/symbol to display 'X' while preserving all existing functionality, validation, and form submission behavior."
+          "description": "Prepare Footer component to accept and display the generated QR code image that will be created at frontend/public/assets/generated/qr-code.dim_400x400.png"
+        }
+      ]
+    },
+    {
+      "id": "REQ-31",
+      "summary": "Display the generated QR code in the Footer component alongside the existing contact information with appropriate styling and labeling",
+      "acceptanceCriteria": [
+        "The QR code is visible in the Footer component",
+        "The QR code includes a descriptive label (e.g., 'Scan to visit our website')",
+        "The QR code styling is consistent with the existing warm accent color theme",
+        "The QR code is appropriately sized and positioned within the footer layout"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Footer.tsx",
+          "operation": "modify",
+          "description": "Add QR code display section to the Footer component. Reference the generated QR code image at frontend/public/assets/generated/qr-code.dim_400x400.png. Include a descriptive label 'Scan to visit our website' and ensure the QR code is styled consistently with the existing warm accent color theme. Position the QR code appropriately within the footer layout alongside existing contact information. The image should maintain appropriate sizing for clear scanning while fitting the footer design."
+        }
+      ]
+    },
+    {
+      "id": "REQ-32",
+      "summary": "Render the generated QR code image as a static asset in frontend/public/assets/generated directory for use in the Footer component",
+      "acceptanceCriteria": [
+        "The QR code image file is saved in frontend/public/assets/generated",
+        "The image is referenced from the Footer component using the correct static asset path"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Footer.tsx",
+          "operation": "modify",
+          "description": "Ensure the Footer component correctly references the QR code image from the static asset path /assets/generated/qr-code.dim_400x400.png. Verify the image element uses appropriate alt text for accessibility and includes error handling for failed image loads."
         }
       ]
     }

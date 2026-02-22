@@ -1,39 +1,75 @@
 {
   "kind": "build_request",
-  "title": "Change booking form email input to use X symbol",
+  "title": "Generate QR code for website",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-23",
-      "text": "Update the email input field in the Booking component (frontend/src/components/Booking.tsx) at XPath /html[1]/body[1]/div[1]/div[1]/main[1]/section[5]/div[1]/div[1]/div[2]/div[2]/div[2]/form[1]/div[1]/div[2]/input[1] to use 'X' as the input symbol/icon instead of the current implementation",
+      "id": "REQ-30",
+      "text": "Generate a QR code image that encodes the Friends AC Services website URL",
       "target": "frontend",
       "source": {
         "messageIds": [
           "msg-latest"
         ],
         "quotes": [
-          "edit the input in X sympol"
+          "please generate a qr code for this website."
         ]
       },
       "acceptanceCriteria": [
-        "The email input field in the Booking form displays 'X' as its associated symbol or icon",
-        "The input field functionality remains unchanged and still accepts email addresses",
-        "The form validation continues to work correctly for the email field"
+        "A QR code image is generated that links to the website URL",
+        "The QR code is scannable and properly encodes the website address",
+        "The image has appropriate dimensions for clear scanning (minimum 300x300px recommended)"
+      ]
+    },
+    {
+      "id": "REQ-31",
+      "text": "Display the generated QR code in the Footer component alongside the existing contact information with appropriate styling and labeling",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "please generate a qr code for this website."
+        ]
+      },
+      "acceptanceCriteria": [
+        "The QR code is visible in the Footer component",
+        "The QR code includes a descriptive label (e.g., 'Scan to visit our website')",
+        "The QR code styling is consistent with the existing warm accent color theme",
+        "The QR code is appropriately sized and positioned within the footer layout"
+      ]
+    },
+    {
+      "id": "REQ-32",
+      "text": "Render the generated QR code image as a static asset in frontend/public/assets/generated directory for use in the Footer component",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The QR code image file is saved in frontend/public/assets/generated",
+        "The image is referenced from the Footer component using the correct static asset path"
       ]
     }
   ],
   "constraints": [
-    "Only modify the email input field in the Booking component at the specified XPath",
-    "Preserve all existing form functionality and validation",
-    "Do not change other input fields in the booking form"
+    "The QR code must be generated as a static image asset, not dynamically rendered",
+    "Do not modify the backend for QR code generation",
+    "Maintain the existing Footer component layout and styling consistency"
   ],
   "nonGoals": [
-    "Modifying the ContactForm component email input",
-    "Changing the booking form layout or other fields",
-    "Altering backend booking submission logic"
+    "Dynamic QR code generation based on user input",
+    "QR code analytics or tracking",
+    "Multiple QR codes for different pages",
+    "Custom QR code styling beyond standard format"
   ],
   "imageRequirements": {
-    "required": [],
+    "required": [
+      "QR code encoding the Friends AC Services website URL with high error correction and clear contrast (qr-code.dim_400x400.png)"
+    ],
     "edits": []
   }
 }

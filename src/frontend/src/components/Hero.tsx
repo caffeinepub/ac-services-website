@@ -24,11 +24,12 @@ export default function Hero() {
       {/* Content */}
       <div className="container relative z-10 px-4 py-20 md:py-32">
         <div className="max-w-3xl">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground mb-6 leading-tight">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground leading-tight mb-6">
             Friends AC Services
-            <br />
-            <span className="text-accent-foreground">You Can Trust</span>
           </h1>
+          <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-accent-foreground mb-6 leading-tight">
+            You Can Trust
+          </h2>
           <p className="text-lg md:text-xl text-primary-foreground/90 mb-8 max-w-2xl leading-relaxed">
             Professional air conditioning installation, repair, and maintenance services. 
             Available 24/7 for emergency calls. Keeping your home cool and comfortable all year round.

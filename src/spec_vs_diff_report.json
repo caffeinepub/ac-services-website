@@ -1,14 +1,31 @@
 {
   "kind": "spec_vs_diff_report",
   "version": "1.0",
-  "generatedAt": "2026-02-22T16:37:43.250Z",
-  "summary": "The diff shows the email input field in the Booking component has been updated to use the X icon from lucide-react, which matches REQ-23. The X icon is positioned absolutely to the left of the email input field. All other form functionality appears preserved.",
-  "missing_requirements": [],
+  "generatedAt": "2026-02-22T17:24:19.279Z",
+  "summary": "The diff shows modifications to the Footer component and project documentation, but critically missing is the actual QR code image file that should have been added to frontend/public/assets/generated. The Footer component includes QR code display logic, but there is no evidence that the static image asset was generated and saved as required.",
+  "missing_requirements": [
+    {
+      "id": "REQ-30",
+      "requirement": "Generate a QR code image that encodes the Friends AC Services website URL",
+      "reason": "No QR code image file was added to the repository. The diff shows no added files, and specifically no image file in frontend/public/assets/generated directory.",
+      "evidence": [
+        "ADDED FILES: - none"
+      ]
+    },
+    {
+      "id": "REQ-32",
+      "requirement": "Render the generated QR code image as a static asset in frontend/public/assets/generated directory",
+      "reason": "The QR code image file is missing from frontend/public/assets/generated. No new files were added according to the diff summary.",
+      "evidence": [
+        "ADDED FILES: - none"
+      ]
+    }
+  ],
   "hallucinated_features": [],
   "confidence": 0.95,
   "changed_files": [
     "frontend-file-summaries.txt",
-    "frontend/src/components/Booking.tsx",
+    "frontend/src/components/Footer.tsx",
     "project_state.json"
   ]
 }
