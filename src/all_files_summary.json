@@ -1,0 +1,20 @@
+{
+  "backend/main.mo": "Motoko actor defining a Message type and submitMessage function that validates and stores contact form submissions with auto-incrementing IDs in a Map.",
+  "feature_evidence.json": "Feature evidence report documenting implementation of hero section, services listing, contact form, about section, footer, and visual theme with high confidence test mappings.",
+  "frontend-file-summaries.txt": "JSON object containing one-sentence summaries of all frontend source files including components, hooks, and styling configuration.",
+  "frontend/index.css": "Tailwind CSS configuration with OKLCH color system defining CSS custom properties for light and dark themes with warm orange/amber accents and blue-gray primary colors.",
+  "frontend/index.html": "HTML entry point with viewport meta tag, page title, root div, and module script reference to main.tsx.",
+  "frontend/src/App.tsx": "Root React component composing Hero, Services, About, ContactForm, Footer sections with Toaster for notifications in a flex column layout.",
+  "frontend/src/components/About.tsx": "About section displaying four statistics cards (experience, customers, certifications, support) with icons and a commitment statement in a responsive grid.",
+  "frontend/src/components/ContactForm.tsx": "Contact form with controlled inputs for name, phone, email, service type select, and message textarea, plus three info cards showing phone, email, and location details.",
+  "frontend/src/components/Footer.tsx": "Footer with four columns displaying company info, contact details with icons, business hours including emergency availability, and social media links with dynamic year.",
+  "frontend/src/components/Hero.tsx": "Hero section with background image overlay, large headline with accent text, service description, and two CTA buttons that scroll to contact form.",
+  "frontend/src/components/Services.tsx": "React component that displays a grid of four AC service cards (Installation, Repair, Maintenance, Emergency Service) with icons, titles, and descriptions using shadcn/ui Card components.",
+  "frontend/src/hooks/useActor.ts": "Custom React hook that manages the ICP backend actor instance using React Query, creating authenticated or anonymous actors based on Internet Identity login state and invalidating dependent queries when the actor changes.",
+  "frontend/src/hooks/useContactForm.ts": "Custom React hook that handles contact form submission via the ICP backend actor, using React Query mutations and displaying toast notifications for success/error states.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Custom React hook and provider for Internet Identity authentication, managing login state, identity persistence, and delegation validation with configurable AuthClient options.",
+  "frontend/src/index.css": "Tailwind CSS configuration with custom CSS variables defining a professional color scheme using OKLCH color space, featuring warm orange accents and deep blue-gray primary colors for both light and dark modes.",
+  "frontend/src/main.tsx": "Application entry point that sets up React Query and Internet Identity providers, then renders the root App component.",
+  "frontend/tailwind.config.js": "Tailwind CSS configuration file extending the default theme with custom colors using OKLCH values, custom border radius variables, typography settings, and animation keyframes for accordion components.",
+  "project_state.json": "Project metadata tracking completed features for an AC services website including hero section, services listing, contact form, about section, footer, and professional visual theme, with image requirements specified for service icons and hero images."
+}

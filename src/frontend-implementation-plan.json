@@ -1,0 +1,141 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "AC Services Hub Frontend Implementation",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Create hero section with AC services headline, description, and call-to-action button",
+      "acceptanceCriteria": [
+        "Hero section displays at the top of the homepage",
+        "Headline clearly communicates AC services",
+        "Call-to-action button is visible and clickable"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Hero.tsx",
+          "operation": "create",
+          "description": "Create Hero component featuring a compelling headline about AC services, a brief description of services offered, and a prominent call-to-action button that scrolls to or links to the contact form. Include the generated hero image frontend/public/assets/generated/ac-technician-hero.dim_1200x600.png as the background or featured visual element."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render the Hero component at the top of the main page layout to ensure it appears first when users visit the site."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Build services section displaying installation, repair, maintenance, and emergency service with icons and descriptions",
+      "acceptanceCriteria": [
+        "Four main service categories are displayed",
+        "Each service has an icon and description",
+        "Services are presented in a grid or card layout"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Services.tsx",
+          "operation": "create",
+          "description": "Create Services component that displays four service categories (installation, repair, maintenance, emergency) in a grid or card layout. Use the generated icons: frontend/public/assets/generated/service-installation.dim_128x128.png, frontend/public/assets/generated/service-repair.dim_128x128.png, frontend/public/assets/generated/service-maintenance.dim_128x128.png, and frontend/public/assets/generated/service-emergency.dim_128x128.png. Include brief descriptions for each service type."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render the Services component below the Hero section to present the core AC service offerings to users."
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Implement contact form for service requests with name, phone, email, service type, and message fields",
+      "acceptanceCriteria": [
+        "Form includes fields for name, phone, email, service type, and message",
+        "Form validates required fields before submission",
+        "Submitted requests are stored in the backend",
+        "User receives confirmation after successful submission"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ContactForm.tsx",
+          "operation": "create",
+          "description": "Create ContactForm component with input fields for name, phone number, email, service type selector, and message textarea. Implement form validation to ensure all required fields are filled. On submission, call the backend submitMessage method from backend.d.ts with the form data and current timestamp. Display a success message to the user after successful submission and clear the form. Handle errors gracefully with user-friendly messages."
+        },
+        {
+          "path": "frontend/src/hooks/useContactForm.ts",
+          "operation": "create",
+          "description": "Create a custom hook to manage contact form state, validation logic, and backend submission. Handle loading states, success confirmation, and error handling for the form submission process."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render the ContactForm component in the main page layout, positioned after the Services section to allow users to request AC services."
+        }
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "summary": "Create about section highlighting company expertise, experience, certifications, and customer satisfaction",
+      "acceptanceCriteria": [
+        "About section is positioned on the homepage",
+        "Content describes company credibility and experience",
+        "Section includes relevant statistics or achievements"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/About.tsx",
+          "operation": "create",
+          "description": "Create About component showcasing the company's expertise in AC services, years of experience, relevant certifications, and commitment to customer satisfaction. Include statistics or achievements that build trust and credibility with potential customers."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render the About component on the homepage, positioned between the Services and ContactForm sections to provide credibility before users submit service requests."
+        }
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "summary": "Design footer with contact information, business hours, and social media links",
+      "acceptanceCriteria": [
+        "Footer displays at the bottom of all pages",
+        "Contact information is clearly visible",
+        "Business hours are listed",
+        "Social media icons are present"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Footer.tsx",
+          "operation": "create",
+          "description": "Create Footer component displaying company contact information (phone number, email address), business hours, and social media links with icons. Ensure the footer has a professional appearance consistent with the site's visual theme."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render the Footer component at the bottom of the main layout to ensure it appears on all pages and provides consistent access to contact information."
+        }
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "summary": "Apply professional visual theme with warm accents, neutral backgrounds, clear typography, and consistent spacing",
+      "acceptanceCriteria": [
+        "Color scheme uses warm accents with neutral backgrounds",
+        "Typography is readable and professional",
+        "Layout is consistent across all sections",
+        "Design conveys trustworthiness appropriate for a service business"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Configure Tailwind theme with a professional color palette using warm accent colors (such as orange or amber tones) and neutral backgrounds (grays, whites). Define typography settings that ensure readability and professionalism. Set consistent spacing values to maintain visual harmony across the site."
+        },
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Apply global styles that reinforce the professional visual theme, including base typography settings, smooth transitions, and any custom CSS properties needed to convey trust and reliability throughout the site."
+        }
+      ]
+    }
+  ]
+}
