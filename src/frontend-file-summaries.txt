@@ -1,11 +1,12 @@
 {
   "frontend/src/App.tsx": "Main application component that renders the complete AC services website layout with Hero, Services, About, ContactForm, Footer sections and toast notifications.",
-  "frontend/src/components/Hero.tsx": "Hero section component featuring a background image with overlay, compelling headline about AC services, service description, and call-to-action buttons that scroll to the contact form.",
+  "frontend/src/components/Hero.tsx": "Hero section component featuring background image with overlay, \"Friends AC Services\" headline with accent color styling, service description, and call-to-action buttons that scroll to the contact form.",
   "frontend/src/components/Services.tsx": "Services section displaying four AC service categories (Installation, Repair, Maintenance, Emergency) in a responsive grid with icons and descriptions.",
   "frontend/src/components/About.tsx": "About section showcasing company credibility with statistics (years of experience, happy customers, certifications, 24/7 support) and commitment statement.",
   "frontend/src/components/ContactForm.tsx": "Contact form component with input fields for name, phone, email, service type selector, and message textarea, plus contact information cards displaying phone, email, and location details.",
   "frontend/src/components/Footer.tsx": "Footer component displaying company information, contact details, business hours, social media links, and attribution with dynamic year and UTM tracking.",
   "frontend/src/hooks/useContactForm.ts": "Custom React hook managing contact form submission to the backend using React Query, with success/error toast notifications and form state management.",
   "frontend/src/index.css": "Global styles with OKLCH color system featuring warm orange/amber accents and deep blue-gray primary colors for a professional, trustworthy AC services brand in both light and dark modes.",
-  "frontend/tailwind.config.js": "Tailwind configuration with extended color palette, custom border radius values, Inter font family, and additional box shadow utilities for the AC services design system."
+  "frontend/tailwind.config.js": "Tailwind configuration with extended color palette, custom border radius values, Inter font family, and additional box shadow utilities for the AC services design system.",
+  "frontend/index.html": "HTML entry point with updated page title \"Friends AC Services\" displayed in the browser tab."
 }

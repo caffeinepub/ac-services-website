@@ -1,11 +1,10 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 3,
+  "projectStateVersion": 5,
   "summary": "AC services website",
   "architectural_notes": [],
   "known_issues": [],
   "isFixRequest": false,
-  "imageRequirements": "## Required Images\n- Professional AC technician working on an air conditioning unit, photorealistic style (ac-technician-hero.dim_1200x600.png)\n- Clean minimalist air conditioner installation icon with modern line art style (service-installation.dim_128x128.png)\n- Wrench and screwdriver crossed icon for AC repair services, simple flat design (service-repair.dim_128x128.png)\n- Checkmark with tools icon for maintenance services, clean vector style (service-maintenance.dim_128x128.png)\n- Lightning bolt with phone icon for emergency service, bold and urgent style (service-emergency.dim_128x128.png)",
   "existing_features": [
     {
       "id": "feature-create-a-hero-section-showcasing-ac-services-with-a-compelling-headline-brief-description-of-services-offered-and-a-prominent-call-to-action-button-for-requesting-service",
@@ -52,6 +51,22 @@
       "title": "Apply a professional visual theme with a clean, modern design that conveys trust and reliability, using warm accent colors against neutral backgrounds, clear typography, and consistent spacing throughout the site",
       "reqIds": [
         "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-page-title-in-frontend-index-html-from-vite-react-ts-to-friends-ac-services",
+      "title": "Update the page title in frontend/index.html from 'Vite + React + TS' to 'Friends AC Services'",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-main-headline-text-in-the-hero-component-from-the-current-headline-to-friends-ac-services-with-appropriate-styling-to-maintain-the-existing-accent-color-treatment",
+      "title": "Update the main headline text in the Hero component from the current headline to 'Friends AC Services' with appropriate styling to maintain the existing accent color treatment",
+      "reqIds": [
+        "REQ-8"
       ],
       "version": 1
     }

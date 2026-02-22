@@ -25,7 +25,7 @@ export default function Hero() {
       <div className="container relative z-10 px-4 py-20 md:py-32">
         <div className="max-w-3xl">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground mb-6 leading-tight">
-            Expert AC Services
+            Friends AC Services
             <br />
             <span className="text-accent-foreground">You Can Trust</span>
           </h1>

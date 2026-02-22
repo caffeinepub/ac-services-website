@@ -1,119 +1,55 @@
 {
   "kind": "build_request",
-  "title": "Create AC services website",
-  "projectName": "AC Services Hub",
+  "title": "Update website title to Friends AC Services",
+  "projectName": "Friends AC Services",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-1",
-      "text": "Create a hero section showcasing AC services with a compelling headline, brief description of services offered, and a prominent call-to-action button for requesting service",
+      "id": "REQ-7",
+      "text": "Update the page title in frontend/index.html from 'Vite + React + TS' to 'Friends AC Services'",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-1"
+          "msg-latest"
+        ],
+        "quotes": [
+          "edit the title name - friends ac services"
         ]
       },
       "acceptanceCriteria": [
-        "Hero section displays at the top of the homepage",
-        "Headline clearly communicates AC services",
-        "Call-to-action button is visible and clickable"
+        "The browser tab title displays 'Friends AC Services'",
+        "The title tag in index.html contains 'Friends AC Services'"
       ]
     },
     {
-      "id": "REQ-2",
-      "text": "Build a services section listing core AC services including installation, repair, maintenance, and emergency service with icons and brief descriptions for each",
+      "id": "REQ-8",
+      "text": "Update the main headline text in the Hero component from the current headline to 'Friends AC Services' with appropriate styling to maintain the existing accent color treatment",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-1"
+          "msg-latest"
+        ],
+        "quotes": [
+          "edit the title name - friends ac services"
         ]
       },
       "acceptanceCriteria": [
-        "Four main service categories are displayed",
-        "Each service has an icon and description",
-        "Services are presented in a grid or card layout"
-      ]
-    },
-    {
-      "id": "REQ-3",
-      "text": "Implement a contact form section where users can submit their name, phone number, email, service type needed, and a message to request AC services",
-      "target": "both",
-      "source": {
-        "messageIds": [
-          "msg-1"
-        ]
-      },
-      "acceptanceCriteria": [
-        "Form includes fields for name, phone, email, service type, and message",
-        "Form validates required fields before submission",
-        "Submitted requests are stored in the backend",
-        "User receives confirmation after successful submission"
-      ]
-    },
-    {
-      "id": "REQ-4",
-      "text": "Create an about section highlighting company expertise, years of experience, certifications, and customer satisfaction commitment",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-1"
-        ]
-      },
-      "acceptanceCriteria": [
-        "About section is positioned on the homepage",
-        "Content describes company credibility and experience",
-        "Section includes relevant statistics or achievements"
-      ]
-    },
-    {
-      "id": "REQ-5",
-      "text": "Design a footer with company contact information including phone number, email address, business hours, and social media links",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-1"
-        ]
-      },
-      "acceptanceCriteria": [
-        "Footer displays at the bottom of all pages",
-        "Contact information is clearly visible",
-        "Business hours are listed",
-        "Social media icons are present"
-      ]
-    },
-    {
-      "id": "REQ-6",
-      "text": "Apply a professional visual theme with a clean, modern design that conveys trust and reliability, using warm accent colors against neutral backgrounds, clear typography, and consistent spacing throughout the site",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-1"
-        ]
-      },
-      "acceptanceCriteria": [
-        "Color scheme uses warm accents with neutral backgrounds",
-        "Typography is readable and professional",
-        "Layout is consistent across all sections",
-        "Design conveys trustworthiness appropriate for a service business"
+        "The hero section headline displays 'Friends AC Services' with the accent color styling",
+        "The visual hierarchy and design consistency is maintained"
       ]
     }
   ],
-  "constraints": [],
+  "constraints": [
+    "Preserve the existing hero section layout and styling",
+    "Maintain the warm orange accent color treatment for emphasis text"
+  ],
   "nonGoals": [
-    "Online payment processing",
-    "Customer account management",
-    "Scheduling system with calendar integration",
-    "Live chat support",
-    "Service technician tracking"
+    "Changing any other text content on the page",
+    "Modifying the color scheme or visual theme",
+    "Altering the hero section structure or layout"
   ],
   "imageRequirements": {
-    "required": [
-      "Professional AC technician working on an air conditioning unit, photorealistic style (ac-technician-hero.dim_1200x600.png)",
-      "Clean minimalist air conditioner installation icon with modern line art style (service-installation.dim_128x128.png)",
-      "Wrench and screwdriver crossed icon for AC repair services, simple flat design (service-repair.dim_128x128.png)",
-      "Checkmark with tools icon for maintenance services, clean vector style (service-maintenance.dim_128x128.png)",
-      "Lightning bolt with phone icon for emergency service, bold and urgent style (service-emergency.dim_128x128.png)"
-    ],
+    "required": [],
     "edits": []
   }
 }

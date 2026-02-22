@@ -2,10 +2,27 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-create-a-hero-section-showcasing-ac-services-with-a-compelling-headline-brief-description-of-services-offered-and-a-prominent-call-to-action-button-for-requesting-service",
-      "featureTitle": "Create a hero section showcasing AC services with a compelling headline, brief description of services offered, and a prominent call-to-action button for requesting service",
+      "featureId": "feature-update-the-page-title-in-frontend-index-html-from-vite-react-ts-to-friends-ac-services",
+      "featureTitle": "Update the page title in frontend/index.html from 'Vite + React + TS' to 'Friends AC Services'",
       "files": [
-        "frontend/src/App.tsx",
+        "frontend/index.html"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-update-the-main-headline-text-in-the-hero-component-from-the-current-headline-to-friends-ac-services-with-appropriate-styling-to-maintain-the-existing-accent-color-treatment",
+      "featureTitle": "Update the main headline text in the Hero component from the current headline to 'Friends AC Services' with appropriate styling to maintain the existing accent color treatment",
+      "files": [
         "frontend/src/components/Hero.tsx"
       ],
       "components": [
@@ -16,103 +33,7 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-1"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-build-a-services-section-listing-core-ac-services-including-installation-repair-maintenance-and-emergency-service-with-icons-and-brief-descriptions-for-each",
-      "featureTitle": "Build a services section listing core AC services including installation, repair, maintenance, and emergency service with icons and brief descriptions for each",
-      "files": [
-        "frontend/src/App.tsx",
-        "frontend/src/components/Services.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-2"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-implement-a-contact-form-section-where-users-can-submit-their-name-phone-number-email-service-type-needed-and-a-message-to-request-ac-services",
-      "featureTitle": "Implement a contact form section where users can submit their name, phone number, email, service type needed, and a message to request AC services",
-      "files": [
-        "frontend/src/App.tsx",
-        "frontend/src/components/ContactForm.tsx",
-        "frontend/src/hooks/useContactForm.ts"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-3"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-create-an-about-section-highlighting-company-expertise-years-of-experience-certifications-and-customer-satisfaction-commitment",
-      "featureTitle": "Create an about section highlighting company expertise, years of experience, certifications, and customer satisfaction commitment",
-      "files": [
-        "frontend/src/App.tsx",
-        "frontend/src/components/About.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-4"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-design-a-footer-with-company-contact-information-including-phone-number-email-address-business-hours-and-social-media-links",
-      "featureTitle": "Design a footer with company contact information including phone number, email address, business hours, and social media links",
-      "files": [
-        "frontend/src/App.tsx",
-        "frontend/src/components/Footer.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-5"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-apply-a-professional-visual-theme-with-a-clean-modern-design-that-conveys-trust-and-reliability-using-warm-accent-colors-against-neutral-backgrounds-clear-typography-and-consistent-spacing-throughout-the-site",
-      "featureTitle": "Apply a professional visual theme with a clean, modern design that conveys trust and reliability, using warm accent colors against neutral backgrounds, clear typography, and consistent spacing throughout the site",
-      "files": [
-        "frontend/src/index.css",
-        "frontend/tailwind.config.js"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-6"
+        "REQ-8"
       ],
       "confidence": "high"
     }

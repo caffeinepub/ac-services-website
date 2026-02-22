@@ -1,14 +1,10 @@
 # Specification
 
 ## Summary
-**Goal:** Create a professional AC services website with service information, contact form, and company details.
+**Goal:** Update the website branding to display "Friends AC Services" as the title and main headline.
 
 **Planned changes:**
-- Build hero section with headline, services description, and call-to-action button
-- Create services section displaying four core offerings (installation, repair, maintenance, emergency) with icons and descriptions
-- Implement contact form with fields for name, phone, email, service type, and message with backend submission handling
-- Add about section highlighting company expertise and experience
-- Design footer with contact information, business hours, and social media links
-- Apply professional visual theme with warm accents, neutral backgrounds, and clean typography
+- Change browser tab title from "Vite + React + TS" to "Friends AC Services"
+- Update hero section headline to "Friends AC Services" while maintaining existing accent color styling
 
-**User-visible outcome:** Users can view AC services offered, learn about the company, and submit service requests through a contact form on a professional, trustworthy website.
+**User-visible outcome:** The website now displays "Friends AC Services" as both the browser tab title and the main headline in the hero section.
