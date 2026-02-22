@@ -1,10 +1,10 @@
 # Specification
 
 ## Summary
-**Goal:** Update the website branding to display "Friends AC Services" as the title and main headline.
+**Goal:** Update the booking form email input field to display an 'X' symbol/icon.
 
 **Planned changes:**
-- Change browser tab title from "Vite + React + TS" to "Friends AC Services"
-- Update hero section headline to "Friends AC Services" while maintaining existing accent color styling
+- Modify the email input field in the Booking component to use 'X' as the input symbol/icon
+- Ensure form functionality and validation remain intact
 
-**User-visible outcome:** The website now displays "Friends AC Services" as both the browser tab title and the main headline in the hero section.
+**User-visible outcome:** The email input field in the booking form will display an 'X' symbol instead of the current icon, while maintaining all existing functionality.

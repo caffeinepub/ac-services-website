@@ -1,52 +1,36 @@
 {
   "kind": "build_request",
-  "title": "Update website title to Friends AC Services",
-  "projectName": "Friends AC Services",
+  "title": "Change booking form email input to use X symbol",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-7",
-      "text": "Update the page title in frontend/index.html from 'Vite + React + TS' to 'Friends AC Services'",
+      "id": "REQ-23",
+      "text": "Update the email input field in the Booking component (frontend/src/components/Booking.tsx) at XPath /html[1]/body[1]/div[1]/div[1]/main[1]/section[5]/div[1]/div[1]/div[2]/div[2]/div[2]/form[1]/div[1]/div[2]/input[1] to use 'X' as the input symbol/icon instead of the current implementation",
       "target": "frontend",
       "source": {
         "messageIds": [
           "msg-latest"
         ],
         "quotes": [
-          "edit the title name - friends ac services"
+          "edit the input in X sympol"
         ]
       },
       "acceptanceCriteria": [
-        "The browser tab title displays 'Friends AC Services'",
-        "The title tag in index.html contains 'Friends AC Services'"
-      ]
-    },
-    {
-      "id": "REQ-8",
-      "text": "Update the main headline text in the Hero component from the current headline to 'Friends AC Services' with appropriate styling to maintain the existing accent color treatment",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-latest"
-        ],
-        "quotes": [
-          "edit the title name - friends ac services"
-        ]
-      },
-      "acceptanceCriteria": [
-        "The hero section headline displays 'Friends AC Services' with the accent color styling",
-        "The visual hierarchy and design consistency is maintained"
+        "The email input field in the Booking form displays 'X' as its associated symbol or icon",
+        "The input field functionality remains unchanged and still accepts email addresses",
+        "The form validation continues to work correctly for the email field"
       ]
     }
   ],
   "constraints": [
-    "Preserve the existing hero section layout and styling",
-    "Maintain the warm orange accent color treatment for emphasis text"
+    "Only modify the email input field in the Booking component at the specified XPath",
+    "Preserve all existing form functionality and validation",
+    "Do not change other input fields in the booking form"
   ],
   "nonGoals": [
-    "Changing any other text content on the page",
-    "Modifying the color scheme or visual theme",
-    "Altering the hero section structure or layout"
+    "Modifying the ContactForm component email input",
+    "Changing the booking form layout or other fields",
+    "Altering backend booking submission logic"
   ],
   "imageRequirements": {
     "required": [],

@@ -1,5 +1,5 @@
 import { SiFacebook, SiX, SiInstagram, SiLinkedin } from 'react-icons/si';
-import { Phone, Mail, Clock } from 'lucide-react';
+import { Phone, Mail, Clock, MapPin } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -13,7 +13,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
           {/* Company Info */}
           <div>
-            <h3 className="text-2xl font-bold mb-4">AC Services</h3>
+            <h3 className="text-2xl font-bold mb-4">Friends AC Services</h3>
             <p className="text-primary-foreground/80 leading-relaxed">
               Your trusted partner for all air conditioning needs. Professional, reliable, and available 24/7.
             </p>
@@ -23,20 +23,34 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact</h4>
             <div className="space-y-3">
+              <div className="flex items-start gap-3 text-primary-foreground/80">
+                <Phone className="w-5 h-5 mt-0.5 flex-shrink-0" />
+                <div className="flex flex-col gap-1">
+                  <a
+                    href="tel:+919786258507"
+                    className="hover:text-primary-foreground transition-colors"
+                  >
+                    +91 97862 58507
+                  </a>
+                  <a
+                    href="tel:+917094656515"
+                    className="hover:text-primary-foreground transition-colors"
+                  >
+                    +91 70946 56515
+                  </a>
+                </div>
+              </div>
               <a
-                href="tel:+1-555-123-4567"
-                className="flex items-center gap-3 text-primary-foreground/80 hover:text-primary-foreground transition-colors"
-              >
-                <Phone className="w-5 h-5" />
-                <span>+1 (555) 123-4567</span>
-              </a>
-              <a
-                href="mailto:info@acservices.com"
+                href="mailto:friendsacservices@gmail.com"
                 className="flex items-center gap-3 text-primary-foreground/80 hover:text-primary-foreground transition-colors"
               >
                 <Mail className="w-5 h-5" />
-                <span>info@acservices.com</span>
+                <span>friendsacservices@gmail.com</span>
               </a>
+              <div className="flex items-center gap-3 text-primary-foreground/80">
+                <MapPin className="w-5 h-5" />
+                <span>Madurai</span>
+              </div>
             </div>
           </div>
 
@@ -102,7 +116,7 @@ export default function Footer() {
 
         <div className="border-t border-primary-foreground/20 mt-12 pt-8 text-center text-primary-foreground/70">
           <p>
-            © {currentYear} AC Services. All rights reserved. | Built with ❤️ using{' '}
+            © {currentYear} Friends AC Services. All rights reserved. | Built with ❤️ using{' '}
             <a
               href={`https://caffeine.ai/?utm_source=Caffeine-footer&utm_medium=referral&utm_content=${appIdentifier}`}
               target="_blank"

@@ -1,8 +1,10 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 5,
+  "projectStateVersion": 13,
   "summary": "AC services website",
-  "architectural_notes": [],
+  "architectural_notes": [
+    "Email notifications disabled - booking data stored in backend only"
+  ],
   "known_issues": [],
   "isFixRequest": false,
   "existing_features": [
@@ -69,12 +71,162 @@
         "REQ-8"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-create-a-booking-section-with-a-form-allowing-users-to-schedule-ac-service-appointments-by-selecting-service-type-preferred-date-preferred-time-slot-and-providing-their-contact-information-name-phone-email",
+      "title": "Create a booking section with a form allowing users to schedule AC service appointments by selecting service type, preferred date, preferred time slot, and providing their contact information (name, phone, email)",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-service-area-coverage-map-section-displaying-the-geographic-regions-where-friends-ac-services-operates-with-visual-representation-of-coverage-zones",
+      "title": "Create a service area coverage map section displaying the geographic regions where Friends AC Services operates, with visual representation of coverage zones",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-integrate-the-booking-section-into-the-main-app-tsx-layout-between-the-services-section-and-the-contact-form-section",
+      "title": "Integrate the booking section into the main App.tsx layout between the Services section and the Contact Form section",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-integrate-the-service-area-map-section-into-the-main-app-tsx-layout-after-the-about-section-and-before-the-footer",
+      "title": "Integrate the service area map section into the main App.tsx layout after the About section and before the Footer",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-footer-component-to-display-two-mobile-numbers-9786258507-and-7094656515-with-appropriate-formatting-and-visual-separation",
+      "title": "Update the Footer component to display two mobile numbers: 9786258507 and 7094656515, with appropriate formatting and visual separation",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-footer-component-email-address-from-the-current-email-to-friendsacservices-gmail-com",
+      "title": "Update the Footer component email address from the current email to friendsacservices@gmail.com",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-footer-component-location-address-to-display-madurai",
+      "title": "Update the Footer component location/address to display 'Madurai'",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-contactform-component-info-cards-to-display-two-mobile-numbers-9786258507-and-7094656515-with-appropriate-formatting",
+      "title": "Update the ContactForm component info cards to display two mobile numbers: 9786258507 and 7094656515, with appropriate formatting",
+      "reqIds": [
+        "REQ-17"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-contactform-component-email-info-card-from-the-current-email-to-friendsacservices-gmail-com",
+      "title": "Update the ContactForm component email info card from the current email to friendsacservices@gmail.com",
+      "reqIds": [
+        "REQ-18"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-contactform-component-location-info-card-to-display-madurai-as-the-address",
+      "title": "Update the ContactForm component location info card to display 'Madurai' as the address",
+      "reqIds": [
+        "REQ-19"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-email-input-field-in-the-booking-component-frontend-src-components-booking-tsx-at-xpath-html-1-body-1-div-1-div-1-main-1-section-5-div-1-div-1-div-2-div-2-div-2-form-1-div-1-div-2-input-1-to-use-x-as-the-input-symbol-icon-instead-of-the-current-implementation",
+      "title": "Update the email input field in the Booking component (frontend/src/components/Booking.tsx) at XPath /html[1]/body[1]/div[1]/div[1]/main[1]/section[5]/div[1]/div[1]/div[2]/div[2]/div[2]/form[1]/div[1]/div[2]/input[1] to use 'X' as the input symbol/icon instead of the current implementation",
+      "reqIds": [
+        "REQ-23"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
     {
       "id": "AR-1",
       "summary": "Create AC services website",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Add online booking system",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Add service area coverage map",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Add backend storage and query functionality for booking appointments, including a submitBooking function that validates and stores booking data with service type, date, time slot, and customer contact information",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Update contact details: mobile numbers (9786258507, 7094656515), email (friendsacservices@gmail.com), address (Madurai)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Store booking submissions in backend without automatic notifications (Option 1 - no email)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Update the backend booking storage to persist all booking submissions so they can be retrieved later for manual review",
+      "reqIds": [
+        "REQ-20"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Add a backend query method that returns all stored booking submissions so the business owner can manually review them",
+      "reqIds": [
+        "REQ-21"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-10",
+      "summary": "Ensure the frontend booking form continues to submit to the backend and displays success confirmation to customers after submission",
+      "reqIds": [
+        "REQ-22"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-11",
+      "summary": "Edit the input in X symbol",
       "reqIds": [],
       "status": "pending"
     }

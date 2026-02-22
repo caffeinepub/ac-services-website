@@ -1,47 +1,34 @@
 {
   "kind": "coverage_report",
   "version": "1.0",
-  "generatedAt": "2026-02-22T15:37:13.892Z",
+  "generatedAt": "2026-02-22T16:37:43.252Z",
   "sources": {
     "buildRequest": true,
     "implementationPlan": true
   },
   "requirements": {
-    "total": 2,
-    "implemented": 2,
+    "total": 1,
+    "implemented": 1,
     "items": [
       {
-        "id": "REQ-7",
-        "summary": "Update the page title in frontend/index.html from 'Vite + React + TS' to 'Friends AC Services'",
+        "id": "REQ-23",
+        "summary": "Update the email input field in the Booking component (frontend/src/components/Booking.tsx) at XPath /html[1]/body[1]/div[1]/div[1]/main[1]/section[5]/div[1]/div[1]/div[2]/div[2]/div[2]/form[1]/div[1]/div[2]/input[1] to use 'X' as the input symbol/icon instead of the current implementation",
         "status": "implemented",
         "plannedFiles": [
-          "frontend/index.html"
+          "frontend/src/components/Booking.tsx"
         ],
         "matchedFiles": [
-          "frontend/index.html"
-        ]
-      },
-      {
-        "id": "REQ-8",
-        "summary": "Update the main headline text in the Hero component from the current headline to 'Friends AC Services' with appropriate styling to maintain the existing accent color treatment",
-        "status": "implemented",
-        "plannedFiles": [
-          "frontend/src/components/Hero.tsx"
-        ],
-        "matchedFiles": [
-          "frontend/src/components/Hero.tsx"
+          "frontend/src/components/Booking.tsx"
         ]
       }
     ]
   },
   "changedFiles": [
     "build-request.json",
-    "build-template/README.md",
     "feature_evidence.json",
     "frontend-file-summaries.txt",
     "frontend-implementation-plan.json",
-    "frontend/index.html",
-    "frontend/src/components/Hero.tsx",
+    "frontend/src/components/Booking.tsx",
     "project_state.json",
     "scratch/component-selection.json",
     "spec.md",

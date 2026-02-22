@@ -2,10 +2,10 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-update-the-page-title-in-frontend-index-html-from-vite-react-ts-to-friends-ac-services",
-      "featureTitle": "Update the page title in frontend/index.html from 'Vite + React + TS' to 'Friends AC Services'",
+      "featureId": "feature-update-the-email-input-field-in-the-booking-component-frontend-src-components-booking-tsx-at-xpath-html-1-body-1-div-1-div-1-main-1-section-5-div-1-div-1-div-2-div-2-div-2-form-1-div-1-div-2-input-1-to-use-x-as-the-input-symbol-icon-instead-of-the-current-implementation",
+      "featureTitle": "Update the email input field in the Booking component (frontend/src/components/Booking.tsx) at XPath /html[1]/body[1]/div[1]/div[1]/main[1]/section[5]/div[1]/div[1]/div[2]/div[2]/div[2]/form[1]/div[1]/div[2]/input[1] to use 'X' as the input symbol/icon instead of the current implementation",
       "files": [
-        "frontend/index.html"
+        "frontend/src/components/Booking.tsx"
       ],
       "components": [
         "core-infrastructure@1.0.2",
@@ -15,25 +15,7 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-7"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-update-the-main-headline-text-in-the-hero-component-from-the-current-headline-to-friends-ac-services-with-appropriate-styling-to-maintain-the-existing-accent-color-treatment",
-      "featureTitle": "Update the main headline text in the Hero component from the current headline to 'Friends AC Services' with appropriate styling to maintain the existing accent color treatment",
-      "files": [
-        "frontend/src/components/Hero.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-8"
+        "REQ-23"
       ],
       "confidence": "high"
     }

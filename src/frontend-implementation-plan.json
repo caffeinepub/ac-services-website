@@ -1,35 +1,21 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Update website title to Friends AC Services",
+  "title": "Change booking form email input to use X symbol",
   "requirements": [
     {
-      "id": "REQ-7",
-      "summary": "Update the page title in index.html to 'Friends AC Services'",
+      "id": "REQ-23",
+      "summary": "Update the email input field in the Booking component to display 'X' as its associated symbol or icon",
       "acceptanceCriteria": [
-        "The browser tab title displays 'Friends AC Services'",
-        "The title tag in index.html contains 'Friends AC Services'"
+        "The email input field in the Booking form displays 'X' as its associated symbol or icon",
+        "The input field functionality remains unchanged and still accepts email addresses",
+        "The form validation continues to work correctly for the email field"
       ],
       "file_operations": [
         {
-          "path": "frontend/index.html",
+          "path": "frontend/src/components/Booking.tsx",
           "operation": "modify",
-          "description": "Change the <title> tag content from 'Vite + React + TS' to 'Friends AC Services' to update the browser tab title"
-        }
-      ]
-    },
-    {
-      "id": "REQ-8",
-      "summary": "Update the main headline in the Hero component to 'Friends AC Services'",
-      "acceptanceCriteria": [
-        "The hero section headline displays 'Friends AC Services' with the accent color styling",
-        "The visual hierarchy and design consistency is maintained"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/Hero.tsx",
-          "operation": "modify",
-          "description": "Update the main headline text to 'Friends AC Services' while preserving the existing accent color treatment on emphasis text and maintaining the current layout and styling structure"
+          "description": "Update the email input field to use 'X' as the input symbol/icon. Locate the email input at the specified XPath position (second input in the first column of form fields) and modify its icon/symbol to display 'X' while preserving all existing functionality, validation, and form submission behavior."
         }
       ]
     }

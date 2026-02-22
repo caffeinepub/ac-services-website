@@ -89,11 +89,52 @@ export class ExternalBlob {
         return this;
     }
 }
+export type BookingId = bigint;
+export interface Booking {
+    id: BookingId;
+    serviceType: string;
+    name: string;
+    email: string;
+    preferredTimeSlot: string;
+    preferredDate: bigint;
+    timestamp: bigint;
+    phone: string;
+}
 export interface backendInterface {
+    getAllBookings(): Promise<Array<Booking>>;
+    submitBooking(name: string, phone: string, email: string, serviceType: string, preferredDate: bigint, preferredTimeSlot: string, timestamp: bigint): Promise<void>;
     submitMessage(name: string, phone: string, email: string, serviceType: string, message: string, timestamp: bigint): Promise<void>;
 }
 export class Backend implements backendInterface {
     constructor(private actor: ActorSubclass<_SERVICE>, private _uploadFile: (file: ExternalBlob) => Promise<Uint8Array>, private _downloadFile: (file: Uint8Array) => Promise<ExternalBlob>, private processError?: (error: unknown) => never){}
+    async getAllBookings(): Promise<Array<Booking>> {
+        if (this.processError) {
+            try {
+                const result = await this.actor.getAllBookings();
+                return result;
+            } catch (e) {
+                this.processError(e);
+                throw new Error("unreachable");
+            }
+        } else {
+            const result = await this.actor.getAllBookings();
+            return result;
+        }
+    }
+    async submitBooking(arg0: string, arg1: string, arg2: string, arg3: string, arg4: bigint, arg5: string, arg6: bigint): Promise<void> {
+        if (this.processError) {
+            try {
+                const result = await this.actor.submitBooking(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+                return result;
+            } catch (e) {
+                this.processError(e);
+                throw new Error("unreachable");
+            }
+        } else {
+            const result = await this.actor.submitBooking(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            return result;
+        }
+    }
     async submitMessage(arg0: string, arg1: string, arg2: string, arg3: string, arg4: string, arg5: bigint): Promise<void> {
         if (this.processError) {
             try {

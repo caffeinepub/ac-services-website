@@ -67,9 +67,12 @@ export default function ContactForm() {
                   <CardTitle className="text-xl">Call Us</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-base">
-                    <a href="tel:+1-555-123-4567" className="hover:text-accent transition-colors">
-                      +1 (555) 123-4567
+                  <CardDescription className="text-base space-y-1">
+                    <a href="tel:+919786258507" className="hover:text-accent transition-colors block">
+                      +91 97862 58507
+                    </a>
+                    <a href="tel:+917094656515" className="hover:text-accent transition-colors block">
+                      +91 70946 56515
                     </a>
                   </CardDescription>
                   <CardDescription className="text-sm mt-2">
@@ -87,8 +90,8 @@ export default function ContactForm() {
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-base">
-                    <a href="mailto:info@acservices.com" className="hover:text-accent transition-colors">
-                      info@acservices.com
+                    <a href="mailto:friendsacservices@gmail.com" className="hover:text-accent transition-colors break-all">
+                      friendsacservices@gmail.com
                     </a>
                   </CardDescription>
                   <CardDescription className="text-sm mt-2">
@@ -106,9 +109,7 @@ export default function ContactForm() {
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-base">
-                    123 Main Street
-                    <br />
-                    Your City, ST 12345
+                    Madurai
                   </CardDescription>
                   <CardDescription className="text-sm mt-2">
                     Mon-Fri: 8AM-6PM
@@ -146,7 +147,7 @@ export default function ContactForm() {
                       <Input
                         id="phone"
                         type="tel"
-                        placeholder="+1 (555) 123-4567"
+                        placeholder="+91 97862 58507"
                         value={formData.phone}
                         onChange={(e) => handleChange('phone', e.target.value)}
                         required

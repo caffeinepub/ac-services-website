@@ -10,7 +10,23 @@ import type { ActorMethod } from '@icp-sdk/core/agent';
 import type { IDL } from '@icp-sdk/core/candid';
 import type { Principal } from '@icp-sdk/core/principal';
 
+export interface Booking {
+  'id' : BookingId,
+  'serviceType' : string,
+  'name' : string,
+  'email' : string,
+  'preferredTimeSlot' : string,
+  'preferredDate' : bigint,
+  'timestamp' : bigint,
+  'phone' : string,
+}
+export type BookingId = bigint;
 export interface _SERVICE {
+  'getAllBookings' : ActorMethod<[], Array<Booking>>,
+  'submitBooking' : ActorMethod<
+    [string, string, string, string, bigint, string, bigint],
+    undefined
+  >,
   'submitMessage' : ActorMethod<
     [string, string, string, string, string, bigint],
     undefined

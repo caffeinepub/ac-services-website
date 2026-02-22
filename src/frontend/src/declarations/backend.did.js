@@ -8,7 +8,25 @@
 
 import { IDL } from '@icp-sdk/core/candid';
 
+export const BookingId = IDL.Nat;
+export const Booking = IDL.Record({
+  'id' : BookingId,
+  'serviceType' : IDL.Text,
+  'name' : IDL.Text,
+  'email' : IDL.Text,
+  'preferredTimeSlot' : IDL.Text,
+  'preferredDate' : IDL.Int,
+  'timestamp' : IDL.Int,
+  'phone' : IDL.Text,
+});
+
 export const idlService = IDL.Service({
+  'getAllBookings' : IDL.Func([], [IDL.Vec(Booking)], ['query']),
+  'submitBooking' : IDL.Func(
+      [IDL.Text, IDL.Text, IDL.Text, IDL.Text, IDL.Int, IDL.Text, IDL.Int],
+      [],
+      [],
+    ),
   'submitMessage' : IDL.Func(
       [IDL.Text, IDL.Text, IDL.Text, IDL.Text, IDL.Text, IDL.Int],
       [],
@@ -19,7 +37,25 @@ export const idlService = IDL.Service({
 export const idlInitArgs = [];
 
 export const idlFactory = ({ IDL }) => {
+  const BookingId = IDL.Nat;
+  const Booking = IDL.Record({
+    'id' : BookingId,
+    'serviceType' : IDL.Text,
+    'name' : IDL.Text,
+    'email' : IDL.Text,
+    'preferredTimeSlot' : IDL.Text,
+    'preferredDate' : IDL.Int,
+    'timestamp' : IDL.Int,
+    'phone' : IDL.Text,
+  });
+  
   return IDL.Service({
+    'getAllBookings' : IDL.Func([], [IDL.Vec(Booking)], ['query']),
+    'submitBooking' : IDL.Func(
+        [IDL.Text, IDL.Text, IDL.Text, IDL.Text, IDL.Int, IDL.Text, IDL.Int],
+        [],
+        [],
+      ),
     'submitMessage' : IDL.Func(
         [IDL.Text, IDL.Text, IDL.Text, IDL.Text, IDL.Text, IDL.Int],
         [],
