@@ -116,11 +116,11 @@ export default function Footer() {
             <div className="mt-6">
               <div className="flex items-center gap-2 mb-3">
                 <QrCode className="w-5 h-5" />
-                <h5 className="text-sm font-semibold">Scan to Visit</h5>
+                <h5 className="text-sm font-semibold">Visit Our Website</h5>
               </div>
               <div className="inline-block p-3 bg-white rounded-lg">
                 <img
-                  src="/assets/generated/qr-code.dim_400x400.png"
+                  src="/assets/generated/website-qr.dim_300x300.png"
                   alt="QR code to visit Friends AC Services website"
                   className="w-32 h-32"
                   onError={(e) => {
@@ -129,7 +129,7 @@ export default function Footer() {
                 />
               </div>
               <p className="text-xs text-primary-foreground/60 mt-2">
-                Scan to visit our website
+                Scan to access Friends AC Services
               </p>
             </div>
           </div>

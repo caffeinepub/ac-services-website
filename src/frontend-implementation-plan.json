@@ -1,53 +1,53 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Generate QR code for website",
+  "title": "Generate website-specific QR code",
   "requirements": [
     {
-      "id": "REQ-30",
-      "summary": "Generate a QR code image that encodes the Friends AC Services website URL",
+      "id": "REQ-33",
+      "summary": "Generate a new QR code image that encodes the actual deployed website URL for Friends AC Services",
       "acceptanceCriteria": [
-        "A QR code image is generated that links to the website URL",
-        "The QR code is scannable and properly encodes the website address",
-        "The image has appropriate dimensions for clear scanning (minimum 300x300px recommended)"
+        "QR code encodes the actual website URL",
+        "QR code is scannable and directs users to the live website",
+        "Image has sufficient resolution for clear scanning"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/components/Footer.tsx",
-          "operation": "modify",
-          "description": "Prepare Footer component to accept and display the generated QR code image that will be created at frontend/public/assets/generated/qr-code.dim_400x400.png"
+          "path": "frontend/public/assets/generated/website-qr.dim_300x300.png",
+          "operation": "create",
+          "description": "Create a QR code image that encodes the Friends AC Services website URL with high error correction and clear contrast. The image will be generated at 300x300 pixels for optimal scanning. This replaces the existing qr-code.dim_400x400.png that currently shows the app identifier."
         }
       ]
     },
     {
-      "id": "REQ-31",
-      "summary": "Display the generated QR code in the Footer component alongside the existing contact information with appropriate styling and labeling",
+      "id": "REQ-34",
+      "summary": "Update the Footer component to display the new website-specific QR code",
       "acceptanceCriteria": [
-        "The QR code is visible in the Footer component",
-        "The QR code includes a descriptive label (e.g., 'Scan to visit our website')",
-        "The QR code styling is consistent with the existing warm accent color theme",
-        "The QR code is appropriately sized and positioned within the footer layout"
+        "Footer displays the new QR code image",
+        "QR code maintains existing styling and positioning",
+        "Label clearly indicates it links to the website"
       ],
       "file_operations": [
         {
           "path": "frontend/src/components/Footer.tsx",
           "operation": "modify",
-          "description": "Add QR code display section to the Footer component. Reference the generated QR code image at frontend/public/assets/generated/qr-code.dim_400x400.png. Include a descriptive label 'Scan to visit our website' and ensure the QR code is styled consistently with the existing warm accent color theme. Position the QR code appropriately within the footer layout alongside existing contact information. The image should maintain appropriate sizing for clear scanning while fitting the footer design."
+          "description": "Update the QR code image source to reference the new website-specific QR code at frontend/public/assets/generated/website-qr.dim_300x300.png instead of the current qr-code.dim_400x400.png. Update the accompanying label text to clearly indicate the QR code links to the Friends AC Services website. Maintain all existing Footer styling, layout, and other content unchanged."
         }
       ]
     },
     {
-      "id": "REQ-32",
-      "summary": "Render the generated QR code image as a static asset in frontend/public/assets/generated directory for use in the Footer component",
+      "id": "REQ-35",
+      "summary": "Render the generated website QR code image as a static asset for use in the Footer component",
       "acceptanceCriteria": [
-        "The QR code image file is saved in frontend/public/assets/generated",
-        "The image is referenced from the Footer component using the correct static asset path"
+        "QR code image is saved in frontend/public/assets/generated",
+        "Image is properly referenced in Footer component",
+        "Asset loads correctly when the page renders"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/components/Footer.tsx",
-          "operation": "modify",
-          "description": "Ensure the Footer component correctly references the QR code image from the static asset path /assets/generated/qr-code.dim_400x400.png. Verify the image element uses appropriate alt text for accessibility and includes error handling for failed image loads."
+          "path": "frontend/public/assets/generated/website-qr.dim_300x300.png",
+          "operation": "create",
+          "description": "Ensure the generated QR code image file frontend/public/assets/generated/website-qr.dim_300x300.png is available as a static asset and properly accessible via the public path /assets/generated/website-qr.dim_300x300.png when the Footer component references it."
         }
       ]
     }
